@@ -1,0 +1,364 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+/* 共通部分 */
+html {
+    font-size: 100%;
+    background-color: black;
+}
+body {
+    font-family: cursive;
+}
+.my-logo h2 {
+    margin-top: 9px !important;
+}
+.my-logo {
+    font-family: cursive;
+    font-size: 2em !important;
+}
+.navbar-nav {
+    margin-top: 0;
+}
+.menu {
+    font-family: cursive;
+}
+.my-nav {
+    background-color: black;
+}
+/* hero */
+.hero h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 3em;
+}
+.hero {
+    background-image: url(../img/sakamichi.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+.hero p {
+    font-family: 'Times New Roman', Times, serif;
+}
+.hero::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* footer */
+footer {
+    background-color: rgb(38, 56, 110);
+    text-align: center;
+    padding: 15px 0;
+}
+footer p {
+    color: rgb(255, 255, 255);
+    font-size: .8em;
+    margin-top: 9px;
+}
+
+/* haikei */
+.haikei h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 3em;
+}
+.haikei {
+    background-color: rgb(177, 171, 124);
+    background-blend-mode: multiply;
+    background-image: url(../img/IMG_3653.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+    height: 400px;
+}
+.haikei::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* haikei2 */
+.haikei2 h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 3em;
+}
+.haikei2 {
+    background-color: rgb(70, 85, 145);
+    background-blend-mode: multiply;
+    background-image: url(../img/chara.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+    height: 400px;
+}
+.haikei2::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.moji {
+    font-family: 'EB Garamond', serif;
+    color: rgb(0, 4, 63);
+    margin-left: 50em;
+    margin-bottom: auto;
+}
+.haikei3 {
+    font-family: 'EB Garamond', serif;
+    background-image: url(../img/yuuyake.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+    height: 400px;
+}
+.haikei3 h1 {
+    font-size: 3em;
+}
+.haikei4 {
+    font-family: 'EB Garamond', serif;
+    background-image: url(../img/wannko.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+    height: 400px;
+}
+.haikei4 h1 {
+    font-size: 3em;
+}
+/* menu */
+.big-box {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    position: relative;
+}
+.big-box img {
+    height: 94%;
+    width: 100%;
+    object-fit: cover;
+}
+.big-box p {
+    position: absolute ;/*絶対配置*/ 
+    text-align: left;
+    margin-left: 60%;
+    margin-top: -20%;
+    color: rgb(255, 255, 255);/*文字は白に*/
+    top: 0;
+    left: 0; 
+    font-size: 1em;
+    }
+.example img {
+    width: 100%;
+    }
+
+/* contact */
+#contact {
+    background-image: url(../img/hutagotuki.png);
+    min-height: 60vh;
+    height: 63em;
+}
+#contact .page-title {
+    font-size: 2em;
+
+    margin-top:3em;
+    margin-bottom: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+}
+#contact p {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 3em;
+}
+#contact .sns {
+    margin-bottom: 0;
+}
+/* form */
+form div {
+    margin-bottom: 15px
+}
+label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+}
+
+#messe-zi {
+    margin-top: -100px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: rgba(255, 255, 255, 0.616);
+    border: 1px rgb(94, 94, 94) solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    }
+input[type="text"],
+input[type="email"]
+{
+    width: 100%;
+    max-width: 240px;
+}
+textarea {
+    width: 100%;
+    max-width: 480px;
+}
+input[type="submit"] {
+    cursor: pointer;
+}
+/* ボタン */
+.button2 {
+    font-size: 1.3em;
+    background-color: rgb(38, 56, 110);
+    color: white;
+    border-radius: 5px;
+    padding: 18px 32px;
+    margin-bottom: 30px;
+}
+.button2:hover {
+    background-color: rgb(113, 147, 238);
+    color: rgb(0, 4, 63);
+}
+.sns {
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.tw {
+    font-size: 3em;
+    color: rgb(81, 138, 192);
+    margin: 10px;
+}
+.tw:hover {
+    color: rgb(255, 223, 137);
+}
+.ti {
+    font-size: 3em;
+    color: black;
+    margin: 10px;
+}
+.ti:hover {
+    color: rgb(255, 223, 137);
+}
+.in {
+    font-size: 3em;
+    color: rgb(228, 86, 86);
+    margin: 10px;
+}
+.in:hover {
+    color: rgb(255, 223, 137);
+}
+/* movie */
+.vide {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+/*----------------------------
+scroll_up ｜下から上へ出現
+----------------------------*/
+.scroll_up {
+    transition: 0.8s ease-in-out;
+    transform: translateY(30px);
+    opacity: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.scroll_up.on {
+    transform: translateY(0);
+    opacity: 1.0;
+}
+
+.menu {
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+.menu h4 {
+    font-family: serif;
+    color: rgb(14, 34, 71);
+}
+.menu h6 {
+    font-family: serif;
+    color: rgb(14, 34, 71);
+}
+.menu .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.719);
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+.menu img {
+    transition: all 0.4s ease;
+}
+.menu:hover .overlay {
+    opacity: 1;
+}
+.menu:hover img {
+    transform: scale(1.1);
+}
+/* レスポンシブ */
+@media (max-width: 600px) {
+    .page-title {
+    font-size: 2.5em;
+    margin-top: 10px;
+    }
+    .page-title p {
+        font-size: 1em;
+    }
+    .main-nav {
+        font-size: 1em;
+        margin-top: 10px;
+    }
+    .main-nav li {
+        margin: 0 20px;
+    }
+    .home-content {
+        margin-top: 20%;
+    }
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .news-contents {
+        flex-direction: column;
+    }
+    article,
+    aside {
+        width: 100%;
+    }
+}
